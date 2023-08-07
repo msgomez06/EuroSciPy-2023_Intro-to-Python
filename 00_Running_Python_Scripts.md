@@ -90,13 +90,13 @@ To install Miniconda, you need to download the installer for your operating syst
 
 #### Windows 🗔
 Once you have downloaded the installer, run it and follow the instructions with the default settings. You should now have a program called `Anaconda Prompt` and `Anaconda Powershell Primpt` installed on your computer. These programs allows you to run commands in a terminal with the correct environment activated - let's start by opening 'Anaconda Powershell Prompt'. You should see a screen like this:  
-<img src='Conda_Screens\anaconda_powershell_prompt.png' width=50%> <br>
+<img src='Conda_screens\anaconda_powershell_prompt.png' width=50%> <br>
 Notice the `(base)` at the beginning of the line - this indicates that the `base` environment is currently active. Let's create a new environment called `test_env` by running the following command:
 ```bash
 conda create -n test_env
 ```
 You should be asked to confirm the installation of the new environment by typing `y` and pressing `Enter`. Once the environment is created, you should see a screen like this:
-<img src='Conda_Screens\create_env.png' width=50%> <br>
+<img src='Conda_screens\create_env.png' width=50%> <br>
 If you run the `conda env list` command, you should now see both the `base` and `test_env` environments listed. Let's go ahead and activate the `test_env` environment by running the following command:
 ```bash
 conda activate test_env
@@ -107,15 +107,15 @@ Let's go ahead and install ipython, short for interactive python, and which will
 conda install ipython
 ```
 Conda will generate a list of packages that will be installed, and will ask you to confirm the installation by typing `y` and pressing `Enter`. Once the installation is complete, you should see a screen like this:  
-<img src='Conda_Screens\ipython_install.png' width=50%> <br>
+<img src='Conda_screens\ipython_install.png' width=50%> <br>
 Now type in `ipython` and press `Enter`. You should see a screen like this:  
-<img src='Conda_Screens\ipython.png' width=50%> <br>
+<img src='Conda_screens\ipython.png' width=50%> <br>
 Try running a small program that prints out the numbers from 0 to 9:
 ```python	
 [print(number) for number in range(10)]
 ```
 You should see the following:  
-<img src='Conda_Screens\ipython_example.png' width=50%> <br>
+<img src='Conda_screens\ipython_example.png' width=50%> <br>
 Once you're done with ipython, simply type `exit()` and press `Enter` to exit the program.
 Let's now install a few commonly used packages. To do this, we'll use a different channel than the default one. Simply add `-c conda-forge` as an option to the install command, as shown below:  
 ```bash
@@ -139,13 +139,13 @@ Then, run the installer:
 bash Miniconda3-latest-Linux-x86_64.sh
 ```
 You will be prompted to accept the license agreement. Press `Space` to scroll through the license agreement, and then type `yes` and press `Enter` to accept the license agreement. You will then be asked to confirm the installation location. Press `Enter` to accept the default location. You will then be asked if you want to initialize Miniconda3 by running `conda init`. Type `yes` and press `Enter` to accept. Restart your terminal, and you should now see `(base)` next to the prompt. This indicates that the `base` environment is currently active:  
-<img src='Conda_Screens\linux_conda_init.png' width=50%> <br>
+<img src='Conda_screens\linux_conda_init.png' width=50%> <br>
 Let's create a new environment called `test_env` by running the following command:
 ```bash
 conda create -n test_env
 ```
 You should be asked to confirm the installation of the new environment by typing `y` and pressing `Enter`. Once the environment is created, you should see a screen like this:
-<img src='Conda_Screens\linux_create_env.png' width=50%> <br>
+<img src='Conda_screens\linux_create_env.png' width=50%> <br>
 If you run the `conda env list` command, you should now see both the `base` and `test_env` environments listed. Let's go ahead and activate the `test_env` environment by running the following command:
 ```bash
 conda activate test_env
@@ -156,15 +156,15 @@ Let's go ahead and install ipython, short for interactive python, and which will
 conda install ipython
 ```
 Conda will generate a list of packages that will be installed, and will ask you to confirm the installation by typing `y` and pressing `Enter`. Once the installation is complete, you should see a screen like this:  
-<img src='Conda_Screens\linux_ipython_install.png' width=50%> <br>
+<img src='Conda_screens\linux_ipython_install.png' width=50%> <br>
 Now type in `ipython` and press `Enter`. You should see a screen like this:  
-<img src='Conda_Screens\linux_ipython.png' width=50%> <br>
+<img src='Conda_screens\linux_ipython.png' width=50%> <br>
 Try running a small program that prints out the numbers from 0 to 9:
 ```python	
 [print(number) for number in range(10)]
 ```
 You should see the following:  
-<img src='Conda_Screens\linux_ipython_example.png' width=50%> <br>
+<img src='Conda_screens\linux_ipython_example.png' width=50%> <br>
 Once you're done with ipython, simply type `exit()` and press `Enter` to exit the program.
 Let's now install a few commonly used packages. To do this, we'll use a different channel than the default one. Simply add `-c conda-forge` as an option to the install command, as shown below:  
 ```bash
@@ -194,7 +194,7 @@ You now have a working Python environment with Jupyter installed! To launch Jupy
 jupyter notebook
 ```
 You should see a screen like this:  
-<img src='Conda_Screens\jupyter.png' width=50%> <br>
+<img src='Conda_screens\jupyter.png' width=50%> <br>
 You can now browse to wherever you have your notebooks stored and open them. You can also create new notebooks by clicking on the `New` button on the top right corner of the screen.  
 For the documentation on Jupyter Notebook, please refer to the [official documentation](https://jupyter-notebook.readthedocs.io/en/stable/).
 <br><br>
@@ -209,7 +209,7 @@ You can then launch JupyterLab by running the following command:
 jupyter lab
 ```
 You should see a screen like this:  
-<img src='Conda_Screens\jupyterlab.png' width=50%> <br>
+<img src='Conda_screens\jupyterlab.png' width=50%> <br>
 You can now browse to wherever you have your notebooks stored and open them. From the launcher, you can create a new Jupyter Notebook (and you can open additional launches by clicking on the + button at the top left corner of the screen).  
 For the documentation on JupyterLab, please refer to the [official documentation](https://jupyterlab.readthedocs.io/en/stable/).
 <br><br>
@@ -228,9 +228,9 @@ Let's go ahead and start Spyder by running the following command:
 spyder
 ```
 You should see a screen like this:  
-<img src='Conda_Screens\spyder.png' width=50%> <br>
+<img src='Conda_screens\spyder.png' width=50%> <br>
 Spyder will open a temporary script file upon launching (`temp.py`). You'll notice at the bottom of the screen that there are two tabs: `Editor` and `Notebook`. Click on the `Notebook` tab to open the notebook interface. You should see a screen like this:  
-<img src='Conda_Screens\spyder-notebook.png' width=50%> <br>
+<img src='Conda_screens\spyder-notebook.png' width=50%> <br>
 From this screen, you can create Jupyter Notebooks and open existing ones. Congratulations, you now have a working Python environment with Spyder installed! 😃
 For the documentation on Spyder, please refer to the [official documentation](https://docs.spyder-ide.org/). For the documentation on Spyder-Notebook, please refer to the [official documentation](https://docs.spyder-ide.org/current/plugins/notebook.html).
 <br><br>
@@ -244,24 +244,24 @@ sudo dpkg -i code_1.60.2-1632313585_amd64.deb
 ```
 
 Once you have VScode installed, launch it (either by clicking on the appropriate icon on Windows, or by running `code` in a terminal on Linux). You should see a screen like this:  
-<img src='Conda_Screens\vscode_start.png' width=50%> <br>
+<img src='Conda_screens\vscode_start.png' width=50%> <br>
 
 On the left, you'll see an icon that looks like a set of 3 blocks about to be joined by a fourth block. Click on it to open the extensions menu. Search for `Python` and install the first result. You should see a screen like this:  
-<img src='Conda_Screens\vscode_python.png' width=50%> <br>
+<img src='Conda_screens\vscode_python.png' width=50%> <br>
 
 Go ahead and install the Jupyter extension on your own 😃.
 
 Now that you have both of these installed, click on the `Explorer` icon on the left - it looks like two files stacked on top of each other. You should see a screen like this:  
-<img src='Conda_Screens\vscode_explorer.png' width=50%> <br>
+<img src='Conda_screens\vscode_explorer.png' width=50%> <br>
 
 Click on the `Open Folder` button, and navigate to the folder where you have your notebooks stored. Select the folder and click on `Open`. You should see a screen like this:
-<img src='Conda_Screens\vscode_folder.png' width=50%> <br>
+<img src='Conda_screens\vscode_folder.png' width=50%> <br>
 
 Let's go ahead and start a new notebook. Click on the `New File` button on the top left corner of the screen, and type in `test.ipynb`. You should see a screen like this:  
-<img src='Conda_Screens\new_jupyter_notebook.png' width=50%> <br>
+<img src='Conda_screens\new_jupyter_notebook.png' width=50%> <br>
 
 You should see 'select kernel' on the top right of the screen - click on it, choose Python Environment from the prompt, and select your virtual environment (e.g., test_env) from the list.  
-<img src='Conda_Screens\vscode_select_kernel.png' width=50%> <br>
+<img src='Conda_screens\vscode_select_kernel.png' width=50%> <br>
 Try importing a library (you might be prompted by vscode to install some files required for the interactive running of jupyter notebooks - go ahead and accept this prompt).
 Congratulations - you can now run Jupyter Notebooks from VScode! 😃
 
@@ -378,7 +378,7 @@ You can now open the repository in your IDE of choice and start working on it! �
 
 #### Using Git in VScode
 VScode has a built-in Git interface that allows you to manage your repositories. Let's go ahead and open the repository we just cloned in VScode. Open VScode, and click on the `Explorer` icon on the left - it looks like two files stacked on top of each other. You should see a screen like this:  
-<img src='Conda_Screens\vscode_with_cloned.png' width=50%> <br>
+<img src='Git\vscode_with_cloned.png' width=50%> <br>
 If you now click on the Source Control icon (the one that looks like a set of circles joined by wires), you should see a screen like this (note that you may have to click on the "Manage Unsafe Repositories" button and select "Trust the authors" to manage the repository - this is, after all, a repository that you cloned from the internet from a user that you don't know):
 <img src='Git\vscode_source_control.png' width=50%> <br>
 Whenever you make changes to your repository, you will be able to push and pull changes using the buttons at the top of the screen. You can also use the `+` and `...` buttons to stage and commit changes.  
