@@ -389,4 +389,30 @@ Additionally, please don't try to push changes to the repository we cloned - it'
 
 #### Setting up GitHub Copilot in VScode
 
-TODO
+First, open up your Github account settings - you should see a screen like this:  
+<img src='Git\github_settings.png' width=50%> <br>
+On the left column, you should see a link to `Copilot` under the `Code, Planning, and Automation` category. If you have a student account, you should be able to activate it for free so long as you subscribed to _Github Global Campus_ when setting up your account. (Alternatively, you can subscribe to it now by [following this link](https://education.github.com/discount_requests/application)) If you're not a student, you can still try it out for free with a trial, and at the time of writing the subscription is $10 a month.
+
+Once your copilot license is active, go ahead and open up VSCode and head to the extensions tab. Search for `Copilot` and install the first result. You should see a screen like this:  
+<img src='Git\vscode_copilot_signin.png' width=50%> <br>
+On the left, you should see a user icon with a green dot next to it. Click on it and select the option to `sign in Github to use Github Copilot`. This will redirect you to an authorization screen that will look like this:  
+<img src='Git\authorize_vscode.png' width=50%> <br>
+
+Accept any prompts that pop up, and you should be good to go! 😃  
+Now, whenever you are typing in a document within VSCode, you should see suggestions from Copilot pop up. You can accept these suggestions by pressing `Tab`.
+
+Finally, you can sign up for the GitHub Copilot Chat Beta here (https://github.com/github-copilot/chat_waitlist_signup/join) if you're interested in trying it out. The chat interface allows you to have a convenient way of interacting with Copilot - for example, here is a quick conversation asking Copilot to make an LDA (linead discriminant analysis) model that fits 5 randomly generated features:  
+<img src='Git\5-feature_LDA.png' width=50%> <br>
+Note that copilot can handle natural language requests, even with spelling mistakes! 😝
+The full text of the code is:
+```python
+from sklearn.datasets import make_classification
+from sklearn.discriminant_analysis import LinearDiscriminantAnalysis
+
+# Generate random dataset with 5 features
+X, y = make_classification(n_samples=100, n_features=5, n_informative=3, n_redundant=0, n_classes=2, random_state=42)
+
+# Fit LDA model to dataset
+lda = LinearDiscriminantAnalysis()
+lda.fit(X, y)
+```
