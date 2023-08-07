@@ -369,7 +369,7 @@ git clone git@github.com:JesperDramsch/ml-for-science-reproducibility-tutorial.g
 ```
 If this is the first time you're cloning a repository, you'll be asked to confirm that you want to connect to the host. Type `yes` and press `Enter` to confirm. You should see a screen like this:  
 <img src='Git\win_repo_clone.png' width=50%> <br>
-And if you navigate to the directory where you cloned the repository, you should see a folder with the name of the repository, as shown below:"
+And if you navigate to the directory where you cloned the repository, you should see a folder with the name of the repository, as shown below:  
 <img src='Git\win_after_cloning.png' width=50%> <br>
 
 You can now open the repository in your IDE of choice and start working on it! 😃
