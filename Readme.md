@@ -1,4 +1,4 @@
-[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/msgomez06/EuroSciPy-2023_Intro-to-Python/HEAD)
+<a href="https://mybinder.org/v2/gh/msgomez06/EuroSciPy-2023_Intro-to-Python/HEAD" target="_blank"> <img src="https://mybinder.org/badge_logo.svg" alt="Open In Binder"> </a>
 # Welcome to the EuroSciPy 2023 Intro to Python Tutorial Repository
 
 If this is your first time trying to use Python, we recommend opening the guide to running Python, which [you can find by clicking here](https://github.com/msgomez06/EuroSciPy-2023_Intro-to-Python/blob/main/00_Running_Python_Scripts.md).
